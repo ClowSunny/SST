@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConfigXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InputFilePath>C:\sst\input\</InputFilePath>
+  <OutputFilePath>C:\sst\output\</OutputFilePath>
+  <Url>http://hq.sinajs.cn/list=</Url>
+  <InputFormat>$OrderNo, $StockCode, $Quantity, $Action, $Type, $Price</InputFormat>
+  <OutputFormat>{Order: '$OrderID', Quantity: $Quantity, AvgPrice: $Price, State: '$State', Time: '$Time'}</OutputFormat>
+  <Frequency>100</Frequency>
+  <FrequencyStopProfit>30000</FrequencyStopProfit>
+  <PrintLog>True</PrintLog>
+</ConfigXml>
